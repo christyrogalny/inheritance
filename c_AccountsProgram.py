@@ -1,7 +1,7 @@
 # This program creates an instance of the SavingsAccount
 # class and an instance of the CD account.
 
-import AccountsClass as accounts
+import c_AccountsClass as accounts
 
 def main():
     # Get the account number, interest rate,
@@ -24,7 +24,7 @@ def main():
     maturity = input('Maturity date: ')
 
     # Create a CD object.
-    cd = accounts.CD(acct_num, int_rate, balance, maturity)
+    cd = accounts.CD(acct_num, int_rate, balance, maturity) ## CD instance
 
     # Display the data entered.
     print('Here is the data you entered:')

@@ -1,5 +1,5 @@
 
-class Athlete:
+class Athlete: ## superclass
     def __init__(self,ht,wt,bodyfat):
         self.__ht = ht
         self.__wt = wt
@@ -16,15 +16,15 @@ class Athlete:
 
 
 
-class Football_Player(Athlete):
-
+class Football_Player(Athlete): ## subclass 
+                ## inherit from Athlete class so Athlete is in ()
     def __init__(self,ht,wt,bodyfat,position,team):
 
         Athlete.__init__(self,ht,wt,bodyfat)
 
         self.__position = position
         self.__team = team
-
+        ## attributes only for the subclass 
 
     def get_position(self):
         return self.__position
@@ -33,12 +33,3 @@ class Football_Player(Athlete):
         return self.__team
 
 
-
-
-
-
-
-
-
-
-    
